@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GCS</title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body style="background-color:#dada" !important;>
+        <div class="container fw-bold">
+            <div class="row">
+                <div class="col-8  m-auto bg-black text-white p-4">
+                    <h4 class="text-center ">Grade Calculating System</h4>
+                </div>
+                <div class="row"">
+                <div class="col-lg-8 bg-white p-5 col-md-12 m-auto d-flex justify-content-around">
+                    <div class="col-md-4">
+                        <div>
+                            <div class="Subject1 mb-3">
+                                <label>Computer</label>
+                                <input class = "form-control"id="subjectOne" type="number" name="" placeholder="Marks">
+                            </div>
+                            <div class="Subject2 mb-3">
+                                <label>English</label>
+                                <input class = "form-control"id="subjectTwo" type="number" name="" placeholder="Marks">
+                            </div>
+                            <div class="Subject3 mb-3">
+                                <label>Math</label>
+                                <input class = "form-control" id="subjectThree" type="number" name="" placeholder="Marks">
+                            </div>
+                            <div class="Subject4 mb-3">
+                                <label>Physics</label>
+                                <input class = "form-control" id="subjectFour" type="number" name="" placeholder="Marks">
+                            </div>
+                            <div class="Subject5 mb-3">
+                                <label>Chemistry</label>
+                                <input class = "form-control" id="subjectFive" type="number" name="" placeholder="Marks">
+                            </div>
+                            <div>
+                                <button class="btn btn-warning col-12"onclick="return calculate()">Calculate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center" >
+                        
+                    <div>
+                        <table class="table table-bordered border-dark" >
+                            <tr>
+                                <td>Total Marks:</td>
+                                <td>500</td>
+                            </tr>
+                            <tr>
+                                <td>Obtained Marks:</td>
+                                <td id = "obtained"></td>
+                            </tr>
+                            <tr>
+                                <td>Percentage Marks:</td>
+                                <td id = "percent"></td>
+                            </tr>
+                            <tr>
+                                <td>Grade:</td>
+                                <td id = "grade"></td>
+                            </tr>
+                            <tr>
+                                <td>Remarks:</td>
+                                <td id = "remarks"></td>
+                            </tr>
+        
+                        </table>
+                    </div>
+        
+                </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="/grade.js"></script>
+    </body>
+</html>
